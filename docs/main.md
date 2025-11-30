@@ -19,9 +19,9 @@ Docusaurus 需要文章开头有一段特定的配置，不然网页会报错。
 
 ```yaml
 ---
+sidebar_position: 0 #这个必须写，代表你的文章索引
 id: my-training-log  # 这里的id要是英文，尽量短一点，比如 "leg-day-plan"
 title: 深蹲涨力心得分享 # 文章的大标题
-sidebar_label: 深蹲心得 # 侧边栏显示的简称（字少点）
 ---
 ```
 

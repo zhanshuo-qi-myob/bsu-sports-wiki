@@ -25,11 +25,12 @@ const FeatureList = [
     title: '欢迎投稿',
     description: (
       <>
-        这是一个开源项目。
-        欢迎大家提交 Pull Request，分享你自己的运动经验和知识。
+        这是一个开源项目。由于是建设初期，内容较少
+        欢迎大家提交 Pull Request,分享你自己的运动经验和知识。
       </>
     ),
   },
+
 ];
 
 function Feature({ emoji, title, description }) {

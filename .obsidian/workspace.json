@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "docs/关于速度训练/空.md",
+                "file": "docs/main.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "空"
+              "title": "main"
             }
           }
         ]
@@ -94,7 +94,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "docs/关于速度训练/空.md",
+                "file": "docs/main.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -104,7 +104,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "空 的反向链接列表"
+              "title": "main 的反向链接列表"
             }
           },
           {
@@ -113,12 +113,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "docs/关于速度训练/空.md",
+                "file": "docs/main.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "空 的出链列表"
+              "title": "main 的出链列表"
             }
           },
           {
@@ -156,13 +156,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "docs/关于速度训练/空.md",
+                "file": "docs/main.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "空 的大纲"
+              "title": "main 的大纲"
             }
           }
         ]
@@ -185,8 +185,8 @@
   },
   "active": "09f56cdd579cf520",
   "lastOpenFiles": [
-    "docs/关于力量训练/空.md",
     "docs/关于速度训练/空.md",
+    "docs/关于力量训练/空.md",
     "docs/main.md",
     "docs/tutorial-extras/img/localeDropdown.png",
     "docs/tutorial-extras/img/docsVersionDropdown.png",
