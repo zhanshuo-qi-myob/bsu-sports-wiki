@@ -128,6 +128,7 @@ const config = {
             items: [
               {
                 label: '邮箱:3360625360@qq.com',
+                href: 'mailto:3360625360@qq.com',
               },
             ],
           },
