@@ -1,43 +1,44 @@
 // @ts-check
-// `@type` JSDoc annotations allow editor autocompletion and type checking
-// (when paired with `@ts-check`).
-// There are various equivalent ways to declare your Docusaurus config.
-// See: https://docusaurus.io/docs/api/docusaurus-config
-
 import { themes as prismThemes } from 'prism-react-renderer';
-
-// This runs in Node.js - Don't use client-side code here (browser APIs, JSX...)
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: 'My Site',
-  tagline: 'Dinosaurs are cool',
+  // -----------------------------------------------------------
+  // 1. 网站基本信息 (修改这里)
+  // -----------------------------------------------------------
+  title: '北京体育大学-ChiuYi', // <--- 修改：你的网站名字
+  tagline: '热血 | 激情 | 冠军', // <--- 修改：你的口号
   favicon: 'img/favicon.ico',
 
-  // Future flags, see https://docusaurus.io/docs/api/docusaurus-config#future
   future: {
-    v4: true, // Improve compatibility with the upcoming Docusaurus v4
+    v4: true,
   },
 
-  // Set the production url of your site here
-  url: 'https://your-docusaurus-site.example.com',
-  // Set the /<baseUrl>/ pathname under which your site is served
-  // For GitHub pages deployment, it is often '/<projectName>/'
+  // -----------------------------------------------------------
+  // 2. 部署关键配置 (★★★ 最重要，必须修改 ★★★)
+  // -----------------------------------------------------------
+
+  // 修改：你的 GitHub Pages 域名
+  url: 'https://ChiuYi0912.github.io',
+
+  // 保持你刚才改对的设置
   baseUrl: '/my-sports-site/',
 
-  // GitHub pages deployment config.
-  // If you aren't using GitHub pages, you don't need these.
-  organizationName: 'facebook', // Usually your GitHub org/user name.
-  projectName: 'docusaurus', // Usually your repo name.
+  // 修改：你的 GitHub 用户名 (不要留 facebook)
+  organizationName: 'ChiuYi0912',
+
+  // 修改：你的仓库名 (不要留 docusaurus)
+  projectName: 'my-sports-site',
+
+  // -----------------------------------------------------------
 
   onBrokenLinks: 'throw',
+  onBrokenMarkdownLinks: 'warn',
 
-  // Even if you don't use internationalization, you can use this field to set
-  // useful metadata like html lang. For example, if your site is Chinese, you
-  // may want to replace "en" with "zh-Hans".
+  // 语言设置，建议改为中文
   i18n: {
-    defaultLocale: 'en',
-    locales: ['en'],
+    defaultLocale: 'zh-Hans', // <--- 修改：改为中文
+    locales: ['zh-Hans'],
   },
 
   presets: [
@@ -47,10 +48,8 @@ const config = {
       ({
         docs: {
           sidebarPath: './sidebars.js',
-          // Please change this to your repo.
-          // Remove this to remove the "edit this page" links.
-          editUrl:
-            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
+          // 如果不想让人编辑你的文档，可以把 editUrl 删掉或注释掉
+          //editUrl: 'https://github.com/YOUR_GITHUB_USERNAME/my-sports-site/tree/main/',
         },
         blog: {
           showReadingTime: true,
@@ -58,11 +57,8 @@ const config = {
             type: ['rss', 'atom'],
             xslt: true,
           },
-          // Please change this to your repo.
-          // Remove this to remove the "edit this page" links.
-          editUrl:
-            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
-          // Useful options to enforce blogging best practices
+          // 同上，修改 editUrl
+          //editUrl: 'https://github.com/YOUR_GITHUB_USERNAME/my-sports-site/tree/main/',
           onInlineTags: 'warn',
           onInlineAuthors: 'warn',
           onUntruncatedBlogPosts: 'warn',
@@ -77,28 +73,40 @@ const config = {
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
-      // Replace with your project's social card
       image: 'img/docusaurus-social-card.jpg',
-      colorMode: {
-        respectPrefersColorScheme: true,
-      },
       navbar: {
-        title: 'My Site',
+        title: '体育共建社区', // 你的网站名
         logo: {
-          alt: 'My Site Logo',
+          alt: 'Logo',
           src: 'img/logo.svg',
         },
         items: [
+          // --- 修改开始 ---
           {
             type: 'docSidebar',
             sidebarId: 'tutorialSidebar',
             position: 'left',
-            label: 'Tutorial',
+            label: '全部文档', // 这里可以保留一个总入口
           },
-          { to: '/blog', label: 'Blog', position: 'left' },
+          // 你也可以直接链接到具体文档
+          /* 
           {
-            href: 'https://github.com/facebook/docusaurus',
-            label: 'GitHub',
+            to: '/docs/philosophy/core-values', // 指向该文件夹下的第一篇文章
+            label: '体育理念',
+            position: 'left',
+          },
+          {
+            to: '/docs/training/warm-up',
+            label: '训练经验',
+            position: 'left',
+          }, 
+          */
+          // --- 修改结束 ---
+
+          { to: '/blog', label: '社区动态', position: 'left' },
+          {
+            href: 'https://https://github.com/ChiuYi0912/my-sports-site.com/YOUR_USERNAME/my-sports-site',
+            label: '去GitHub投稿', // 引导大家去贡献
             position: 'right',
           },
         ],
@@ -107,46 +115,29 @@ const config = {
         style: 'dark',
         links: [
           {
-            title: 'Docs',
+            title: '栏目',
             items: [
               {
-                label: 'Tutorial',
+                label: '球队百科',
                 to: '/docs/intro',
               },
-            ],
-          },
-          {
-            title: 'Community',
-            items: [
               {
-                label: 'Stack Overflow',
-                href: 'https://stackoverflow.com/questions/tagged/docusaurus',
-              },
-              {
-                label: 'Discord',
-                href: 'https://discordapp.com/invite/docusaurus',
-              },
-              {
-                label: 'X',
-                href: 'https://x.com/docusaurus',
-              },
-            ],
-          },
-          {
-            title: 'More',
-            items: [
-              {
-                label: 'Blog',
+                label: '赛事新闻',
                 to: '/blog',
               },
+            ],
+          },
+          {
+            title: '社交媒体',
+            items: [
               {
-                label: 'GitHub',
-                href: 'https://github.com/facebook/docusaurus',
+                label: 'Twitter / X',
+                href: 'https://twitter.com',
               },
             ],
           },
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
+        copyright: `Copyright © ${new Date().getFullYear()} My Sports Site. Built with Docusaurus.`,
       },
       prism: {
         theme: prismThemes.github,

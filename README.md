@@ -1,41 +1,51 @@
-# Website
+###  关于我与这个项目
 
-This website is built using [Docusaurus](https://docusaurus.io/), a modern static website generator.
+Hello！我是 **ChiuYi**，目前在 **北京体育大学（BSU）** 读预科。
 
-## Installation
+在这个圈子里待久了，我发现很多宝贵的训练经验、甚至是一些很玄学的“运动理念”，往往只存在于教练的口传心授或者老队员的闲聊里。过段时间如果不记下来，可能就忘了。
+
+所以我利用课余时间折腾了这个网站。我想把它做成一个**开源的体育知识库**。这里不一定全是高大上的学术论文，更多的是我们实打实的**训练笔记、伤病恢复的“血泪史”，以及对运动本质的思考**。
+
+这不是我一个人的网站，这是给所有热爱运动的人准备的笔记本。
+
+### 这里有什么？
+
+目前的规划主要分这么几块（还在持续填坑中...）：
+
+*   ** 体育理念 (Philosophy)**：心态建设、比赛心理、运动背后的逻辑。
+*   ** 训练经验 (Training)**：
+    *   实战中总结的训练计划
+    *   热身与恢复的小技巧
+    *   体能与力量的进阶指南
+*   ** 伤病与康复**：久病成医，分享一些防伤心得（当然，严重了还是得去医院）。
+
+###  如何投稿/参与共建？
+
+无论你是北体的校友，还是单纯的体育爱好者，只要你有好的经验想分享，非常欢迎！
+
+**如果你懂代码 (Git & GitHub)：**
+1.  **Fork** 这个仓库。
+2.  在 `docs/` 目录下新建你的 Markdown 文件（或者修改现有的）。
+3.  提交 **Pull Request (PR)** 给我。
+
+**如果你不想折腾代码：**
+1.  直接在 **Issues** 里开一个贴，把你的文章贴进去。
+2.  或者直接联系我（见下方），发给我 word 文档，我来帮你排版上传。
+3.  *（注：所有贡献者我都会在网站上专门列出一个感谢名单！）*
+
+###  本地运行 (Dev)
+
+如果你想把这个网站下载到本地自己跑跑看：
 
 ```bash
-yarn
-```
+# 克隆仓库
+git clone https://github.com/你的用户名/my-sports-site.git
 
-## Local Development
+# 进入目录
+cd my-sports-site
 
-```bash
-yarn start
-```
+# 安装依赖
+npm install
 
-This command starts a local development server and opens up a browser window. Most changes are reflected live without having to restart the server.
-
-## Build
-
-```bash
-yarn build
-```
-
-This command generates static content into the `build` directory and can be served using any static contents hosting service.
-
-## Deployment
-
-Using SSH:
-
-```bash
-USE_SSH=true yarn deploy
-```
-
-Not using SSH:
-
-```bash
-GIT_USER=<Your GitHub username> yarn deploy
-```
-
-If you are using GitHub pages for hosting, this command is a convenient way to build the website and push to the `gh-pages` branch.
+# 启动本地预览
+npm start
